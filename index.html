@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Crie sua conta</h2>
+      </div>
+      <form id="form">
+        <div class="form-control">
+          <label for="username">Nome completo</label>
+          <input type="text" id="username" placeholder="Digite seu nome" />
+          <i class="fa-solid fa-exclamation"></i>
+          <i class="fa-solid fa-check"></i>
+          <smal>Mensagem de erro</smal>
+        </div>
+
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Digite seu email" />
+          <i class="fa-solid fa-exclamation"></i>
+          <i class="fa-solid fa-check"></i>
+          <smal>Mensagem de erro</smal>
+        </div>
+
+        <div class="form-control">
+          <label for="telefone">Telefone</label>
+          <input type="tel" id="telefone" placeholder="Digite seu telefone" />
+          <i class="fa-solid fa-exclamation"></i>
+          <i class="fa-solid fa-check"></i>
+          <smal>Mensagem de erro</smal>
+        </div>
+
+        <div class="form-control">
+          <label for="CPF">CPF</label>
+          <input type="number" id="CPF" placeholder="Digite seu CPF" />
+          <i class="fa-solid fa-exclamation"></i>
+          <i class="fa-solid fa-check"></i>
+          <smal>Mensagem de erro</smal>
+        </div>
+
+        <div class="form-control">
+          <label for="endereço">Endereço</label>
+          <input type="text" id="endereço" placeholder="Digite seu endereço" />
+          <i class="fa-solid fa-exclamation"></i>
+          <i class="fa-solid fa-check"></i>
+          <smal>Mensagem de erro</smal>
+        </div>
+
+        <div class="form-control">
+          <label for="CEP">CEP</label>
+          <input type="number" id="CEP" placeholder="Digite seu CEP" />
+          <i class="fa-solid fa-exclamation"></i>
+          <i class="fa-solid fa-check"></i>
+          <smal>Mensagem de erro</smal>
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/8dcaaf4d5e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/jquery.mask.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("telefone").mask("(00) 00000-0000");
+      });
+    </script>
+  </body>
+</html>
